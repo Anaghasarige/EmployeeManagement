@@ -64,7 +64,7 @@ public ResponseEntity<Employee>updatedEmployeeById(@PathVariable(value="Id")long
 public String deleteEmployeeById(@PathVariable long Id) {
 	Employee getEmp = employeeRepository.getById(Id);
 	employeeRepository.delete(getEmp);
-	return "A record successfully deleted";
+	return "A record is deleted";
 		
 }
 

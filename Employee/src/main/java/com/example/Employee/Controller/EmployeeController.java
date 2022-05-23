@@ -31,7 +31,7 @@ public List<Employee> displayMessage(){
 	return employeeRepository.findAll(); 
 	
 }
-//Save all Employees
+//Save the all Employees
 @PostMapping("/employees")
 public Employee addEmployee(@RequestBody Employee emp) {
 	Employee getEmp = employeeRepository.save(emp);
